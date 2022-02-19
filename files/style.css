@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+    color: aquamarine;
+    text-align: center;
+}
+
+#display{
+    font-size: 2em;
+}

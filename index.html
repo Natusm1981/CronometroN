@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <script src="files/script.js" defer></script>
+    <link rel="stylesheet" href="files/style.css">
+</head>
+<body onload="relogio()">
+    <h1>CRONOMETRO</h1>
+    <hr>
+    <h2>Hora atual</h2>
+    <div>
+        <span id = "hora">00</span> :
+        <span id = "min" >11</span> :
+        <span id = "seg" >22</span>
+    </div>
+    <hr>
+    <button id="prog" onclick="iniciar()">Inicio</button>
+    <button id="temp" onclick="parar()">Parar</button>
+    <div>
+        <div>
+            <span id = "cronoH">00</span> :
+            <span id = "cronoM" >00</span> :
+            <span id = "cronoS" >00</span> :
+            <span id = "cronoMs">0000</span>
+    </div>
+    <p id="display">display</p>
+
+</body>
+</html>
