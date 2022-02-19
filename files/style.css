@@ -7,3 +7,7 @@ body{
 #display{
     font-size: 2em;
 }
+
+.timer{
+    text-align: right;
+}
