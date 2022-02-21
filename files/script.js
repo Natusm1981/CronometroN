@@ -21,3 +21,17 @@ function relogio(){
     setInterval("updateClock()", 2)
 }
 
+function toggle(){
+    var displayP = document.getElementById("progressivo")
+    var displayR = document.getElementById("regressivo")
+    if (displayP.style.display === "none"){
+        displayP.style.display = "block"
+        displayR.style.display = "none"
+        document.getElementById("btnToggle").innerHTML = "REGRESSIVO"
+    } 
+    else{
+        displayP.style.display = "none"
+        displayR.style.display = "block"
+        document.getElementById("btnToggle").innerHTML = "PROGRESSIVO"
+    }
+}

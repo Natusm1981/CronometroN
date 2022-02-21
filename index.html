@@ -20,7 +20,10 @@
         <span id = "seg" class="timer">0</span>
     </div>
     <hr>
+    <button id="btnToggle" onclick="toggle()">REGRESSIVO</button>
+    <hr>
     <div id = "progressivo">
+        <h2>CRONOMETRO PROGRESSIVO</h2>
         <div>
             <button class="btn" onclick="iniciar()">Inicio</button>
             <button class="btn" onclick="parar()">Parar</button>
@@ -33,12 +36,25 @@
                 <span id = "cronoMs" class="timer">0</span>
         </div>
     </div>
-<!--
-    <div id = "regressivo">
+
+    <div id = "regressivo" style="display: none;">
+        <h2>CRONOMETRO REGRESSIVO</h2>
         <div>
-            <button class="btn" onclick="iniciar()">Inicio</button>
-            <button class="btn" onclick="parar()">Parar</button>
-            <button class="btn" onclick="reiniciar()">Reiniciar</button>
+            <input type="number" min="0" step="1" name="Hora" id="rHora" placeholder="0" class="input_R">
+            <input type="number" min="0" step="1" name="Minuto" id="rMin" placeholder="0" class="input_R">
+            <input type="number" min="0" step="1" name="Segundo" id="rSeg" placeholder="0" class="input_R">
+        </div>
+        <table>
+            <tr>
+                <td>HORAs</td>
+                <td>MINUTOs</td>
+                <td>SEGUNDOs</td>
+            </tr>
+        </table>
+        <div>
+            <button class="btn" onclick="iniciarR()">Inicio</button>
+            <button class="btn" onclick="pararR()">Parar</button>
+            <button class="btn" onclick="reiniciarR()">Reiniciar</button>
         </div>
         <div class="box">
                 <span id = "cronoHR" class="timer">0</span> :
@@ -47,7 +63,7 @@
                 <span id = "cronoMsR" class="timer">0</span>
         </div>
     </div>
--->
+
 
 </body>
 </html>
