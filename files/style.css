@@ -4,10 +4,7 @@ body{
     text-align: center;
 }
 
-#display{
-    font-size: 2em;
+.btn{
+    size: 50px;
 }
 
-.timer{
-    text-align: right;
-}

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
-    <script src="files/script.js" defer></script>
+    <script src="files/script.js"></script>
+    <script src="files/progressivo.js"></script>
+    <script src="files/regressivo.js"></script>
     <link rel="stylesheet" href="files/style.css">
 </head>
 <body onload="relogio()">
@@ -13,21 +15,39 @@
     <hr>
     <h2>Hora atual</h2>
     <div class="box">
-        <span id = "hora" class="timer">00</span> :
-        <span id = "min" class="timer">11</span> :
-        <span id = "seg" class="timer">22</span>
+        <span id = "hora" >0</span> :
+        <span id = "min" class="timer">0</span> :
+        <span id = "seg" class="timer">0</span>
     </div>
     <hr>
-    <button id="prog" onclick="iniciar()">Inicio</button>
-    <button id="temp" onclick="parar()">Parar</button>
-
-    <div class="box">
-            <span id = "cronoH" class="timer">00</span> :
-            <span id = "cronoM" class="timer">00</span> :
-            <span id = "cronoS" class="timer">00</span> :
-            <span id = "cronoMs" class="timer">0000</span>
+    <div id = "progressivo">
+        <div>
+            <button class="btn" onclick="iniciar()">Inicio</button>
+            <button class="btn" onclick="parar()">Parar</button>
+            <button class="btn" onclick="reiniciar()">Reiniciar</button>
+        </div>
+        <div class="box">
+                <span id = "cronoH" class="timer">0</span> :
+                <span id = "cronoM" class="timer">0</span> :
+                <span id = "cronoS" class="timer">0</span> :
+                <span id = "cronoMs" class="timer">0</span>
+        </div>
     </div>
-    <p id="display">display</p>
+<!--
+    <div id = "regressivo">
+        <div>
+            <button class="btn" onclick="iniciar()">Inicio</button>
+            <button class="btn" onclick="parar()">Parar</button>
+            <button class="btn" onclick="reiniciar()">Reiniciar</button>
+        </div>
+        <div class="box">
+                <span id = "cronoHR" class="timer">0</span> :
+                <span id = "cronoMR" class="timer">0</span> :
+                <span id = "cronoSR" class="timer">0</span> :
+                <span id = "cronoMsR" class="timer">0</span>
+        </div>
+    </div>
+-->
 
 </body>
 </html>
